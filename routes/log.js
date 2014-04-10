@@ -6,7 +6,7 @@
 module.exports = function(io) {
     return {
         show: function(req, res){
-            res.render('index', { title: req.params.key + 'hahah' });
+            res.render('index', { title: req.params.key });
         },
 
         add: function(req, res){

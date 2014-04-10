@@ -6,7 +6,7 @@ html
     script(src='http://localhost:35729/livereload.js')
     script(src='/socket.io/socket.io.js')
     script(type='text/javascript').
-        var socket = io.connect('http://localhost:24601');
+        var socket = io.connect('/'); 
         socket.on('log', function(data) {
             console.log(data);
         });
